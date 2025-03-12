@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 # Comando de inicio
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Envia un mensaje cuando el comando /start es usado"""
-    await update.message.reply_text("¡Hola! Soy tu bot. ¿Cómo puedo ayudarte hoy?")
+    await update.message.reply_text("¡Hola! Soy tu bot. ¿Cómo puedo ayudarte hoy Sergi?")
 
 # Configurar el bot con el token
 def main():
