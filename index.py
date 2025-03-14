@@ -1,7 +1,7 @@
 import logging
 import random
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import Application, CommandHandler, ContextTypes
+from telegram.ext import Application, CommandHandler, ContextTypes, CallbackQueryHandler
 from flask import Flask
 from threading import Thread
 
@@ -87,7 +87,7 @@ def main():
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("help", help_command))
     application.add_handler(CommandHandler("news", enviar_noticias))
-    application.add_handler(telegram.ext.CallbackQueryHandler(button_handler))
+    application.add_handler(CallbackQueryHandler(button_handler))
 
     keep_alive()
     application.run_polling()
