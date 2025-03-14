@@ -11,8 +11,8 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 
 # Token del Bot (REEMPLAZA ESTO POR TU TOKEN REAL)
-TOKEN = 'TU_TOKEN_AQUI'
-CHAT_ID = 'TU_CHAT_ID_AQUI'  # ID del chat donde enviar noticias
+TOKEN = '7077644643:AAFJrmehzk3LdIuunnPKynwkYqzd0o0iySg'
+CHAT_ID = '7193387020'  # ID del chat donde enviar noticias
 
 # Crear la instancia del bot
 application = Application.builder().token(TOKEN).build()
@@ -95,3 +95,4 @@ def main():
 # 📌 8️⃣ Ejecutar el bot
 if __name__ == '__main__':
     main()
+ 
